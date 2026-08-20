@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        body{
+            background-size: auto;
+            background-color: rgb(206, 248, 204);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+          header{
+            text-align: center;
+            border-style: solid;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .gallery-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery-column{
+            flex: 25%;
+            max-width: 35%;
+            max-height: 400px;
+            padding: 3%;
+        }
+
+           .gallery-column img{ width: 90%;
+        border-radius: 50px;
+        
+        padding: 20px;
+        }
+
+        nav ul{
+            list-style-type: none;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+         nav li{
+            display: inline-block;
+        }
+
+        nav a{
+            text-decoration: none;
+            background-color: rgb(4, 116, 32);
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        nav a:hover{
+            background-color: rgb(57, 3, 139);
+        }
+
+        @media (max-width: 900px){
+              .gallery-container{
+                flex-direction: column;
+            }
+            .gallery-column{
+                flex: 50%;
+                
+            }
+        }
+
+         @media (max-width: 600px){
+            .gallery-container{
+                flex-direction: column;
+            }
+            .gallery-column{   
+                flex: 100%;            
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class=".bg-content">
+        <h1>Gallery</h1>
+    </header>
+
+    <main>
+         <div class="gallery-container">
+            <div class="gallery-column">
+                <img src="./assets/Nguyet-moon.png" alt="moon">
+            </div>
+
+            <div class="gallery-column">
+                <img src="./assets/Irawo_Nova.png" alt="twins">
+            </div>
+
+             <div class="gallery-column">
+                <img src="./assets/Spinach-Cookie.png" alt="Spinach">
+            </div>
+
+             <div class="gallery-column">
+                <img src="./assets/Rikona-Card.png" alt="cupid">
+            </div>
+
+            <div class="gallery-column">
+                <img src="./assets/M-banner.png" alt="M">
+            </div>
+
+             <div class="gallery-column">
+                <img src="./assets/Kombe_Nguyet_3.png" alt="Eclipse">
+            </div>
+
+            <div class="gallery-column">
+                <img src="./assets/Neha-Card.png" alt="Neha">
+            </div>
+
+            <div class="gallery-column">
+                <img src="./assets/Nephyrus-pan.png" alt="Nephyrus">
+            </div>
+
+            <div class="gallery-column">
+                <img src="./assets/Sam-pan.png" alt="Nephyrus">
+            </div>
+    </main>
+    <nav>
+            <ul>
+                <li><a href="Portfolio-project.html">Home</a></li>
+                <li><a href="Stories.html">Stories</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+</body>
+</html>
